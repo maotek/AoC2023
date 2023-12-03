@@ -4,6 +4,8 @@ with open('day2/day2.txt', 'r') as f:
     data = [x.strip() for x in f.readlines()]
 
 red, green, blue = 12, 13, 14
+
+# Part 1
 sm = 0
 for i in data:
     a = i.split(": ")
@@ -15,6 +17,8 @@ for i in data:
         sm += id
 print(sm)
 
+
+# Part 2
 sm = 0
 for i in data:
     a = i.split(": ")

@@ -4,6 +4,7 @@ with open('day1/day1.txt', 'r') as f:
     data = [x.strip() for x in f.readlines()]
 
 
+# Part 1
 class Del:
     def __init__(self, keep=string.digits):
         self.comp = dict((ord(c), c) for c in keep)
@@ -13,9 +14,10 @@ class Del:
 
 
 DD = Del()
-
 print(sum([int(i.translate(DD)[0] + i.translate(DD)[-1]) for i in data]))
 
+
+# Part 2
 help_dict = {
     'one': '1',
     'two': '2',
